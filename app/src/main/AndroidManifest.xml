@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidtest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--此权限用于搜索短信信息-->
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.example.androidtest.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.androidtest.ScreenPropertyActivity"
+            android:label="@string/screen_property"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="com.csc.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 文件上传下载 -->
+        <activity
+            android:name="com.example.androidtest.updownload.UpDoanLoadActivity"
+            android:label="@string/upload_download_test"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="com.csc.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 图片异步加载 -->
+        <activity
+            android:name="com.example.androidtest.imageloader.ImageLoadAcitivity"
+            android:label="@string/image_loader"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="com.csc.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 显示三页的viewpager -->
+        <activity
+            android:name="com.example.androidtest.multipleviewpager.MultiViewPagerActivity"
+            android:label="@string/multi_viewpager"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="com.csc.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 动画 -->
+        <activity
+            android:name="com.example.androidtest.animation.AnimationActivity"
+            android:label="@string/animation_test"
+            android:screenOrientation="portrait" >
+            <!-- android:theme="@android:style/Theme.Light.NoTitleBar" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="com.csc.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        <!-- timer测试 -->
+        <activity
+            android:name="com.example.androidtest.timer.TimerTestActivity"
+            android:label="@string/timer"
+            android:screenOrientation="portrait" >
+            <!-- android:theme="@android:style/Theme.Light.NoTitleBar" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="com.csc.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.example.androidtest.TestReceiver" >
+            <intent-filter>
+                <action android:name="com.csc.test.action.ALARM" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="test1">
+       <item>key_001</item>
+       <item>key_002</item>
+       <item>key_003</item>
+       <item>key_004</item>
+       <item>key_005</item>
+  	</string-array>
+  	
+    <string-array name="test2">
+       <item>key_001</item>
+       <item>key_002</item>
+       <item>key_003</item>
+       <item>key_004</item>
+       <item>key_005</item>
+  	</string-array>
+</resources>
